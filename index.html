@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - KEY PHEAROM</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      min-height: 100vh;
+      background-image: url(/assets/bg.jpg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .cv-container {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 900px;
+      width: 100%;
+      color: #000;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    .header img {
+      max-width: 120px;
+      border-radius: 10px;
+    }
+
+    .header-info {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #e4eb16;
+      margin-top: 10px;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    h3 {
+      color: #f0c229;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #999;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="header">
+      <div class="header-info">
+        <h1>KEY PHEAROM</h1>
+        <h2>Fullstack Developer</h2>
+        <p>Email: phearomkey4545@gmail.com</p>
+        <p>Phone: +855 17 2743 78</p>
+        <p>Location: Phnom Penh, Cambodia</p>
+      </div>
+      <img src="/assets/Phearom.JPG" alt="Phearom Photo">
+    </div>
+
+    <section>
+      <h3>Profile</h3>
+      <p>Motivated Fullstack Developer with experience in building web and mobile applications using technologies like Laravel, React.js, Flutter, and PostgreSQL. Passionate about writing clean, efficient code and delivering user-centric solutions.</p>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>Frontend: HTML, CSS, JavaScript, React.js</li>
+        <li>Backend: PHP (Laravel), Node.js</li>
+        <li>Mobile: Flutter (Android/iOS)</li>
+        <li>Database: MySQL, PostgreSQL</li>
+        <li>Tools: Git, Docker, VS Code, Linux</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Experience</h3>
+      <p><strong>Fullstack Developer Intern</strong> – Tech Company, Phnom Penh (2024 – Present)</p>
+      <ul>
+        <li>Developed school management system using Laravel and React.js</li>
+        <li>Created responsive dashboards and RESTful APIs</li>
+        <li>Integrated student attendance and role-based access control</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <p><strong>Bachelor of Information Technology Engineering</strong> –Royal University Of Phnom Peng , Cambodia (2024 – 2028)</p>
+      <p><strong>ETEC CENTER ENGINEERING</strong> (2023 – 2025)</p>
+      <p><strong>MASTER IT OF CAMBODIA</strong> (2020 – 2021)</p>
+      <p><strong>UDEMY COURSE</strong> (Present)</p>
+      <p><strong>AMIGOSCODE</strong> (Present)</p>
+      <button id="downloadBtn" class="cv-container">GET MY CV</button>
+    </section>
+  </div>
+</body>
+</html>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const element = document.querySelector('.cv-container');
+    const opt = {
+      margin:       0.5,
+      filename:     'Key_Phearom_CV.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2 },
+      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+    html2pdf().set(opt).from(element).save();
+  }); -->
+</script>
+

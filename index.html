@@ -5,82 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV - KEY PHEAROM</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: 'Courier New', Courier, monospace;
-      min-height: 100vh;
-      background-image: url(/assets/bg.jpg);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px;
-    }
+body {
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+  background-image: url(/assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-    .cv-container {
-      background-color: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 15px;
-      padding: 30px;
-      max-width: 900px;
-      width: 100%;
-      color: #000;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    }
+.cv-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  color: #000;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
 
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 25px;
-    }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
 
-    .header img {
-      max-width: 120px;
-      border-radius: 10px;
-    }
+.header-info {
+  flex: 1;
+  margin-right: 20px;
+}
 
-    .header-info {
-      flex: 1;
-      margin-right: 20px;
-    }
+.header img {
+  max-width: 120px;
+  border-radius: 10px;
+}
 
-    h1 {
-      font-size: 2.5rem;
-      color: #ffffff;
-    }
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
 
-    h2 {
-      font-size: 1.3rem;
-      color: #e4eb16;
-      margin-top: 10px;
-    }
+h2 {
+  font-size: 1.3rem;
+  color: #e4eb16;
+  margin-top: 10px;
+}
 
-    section {
-      margin-top: 20px;
-    }
+section {
+  margin-top: 20px;
+}
 
-    h3 {
-      color: #f0c229;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #999;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+h3 {
+  color: #f0c229;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #999;
+  display: inline-block;
+  padding-bottom: 5px;
+}
 
-    ul {
-      list-style: disc;
-      margin-left: 20px;
-    }
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
 
-    p {
-      margin: 5px 0;
-    }
+p {
+  margin: 5px 0;
+}
+
+/* Button Styling */
+#downloadBtn {
+  background-color: #f0c229;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+#downloadBtn:hover {
+  background-color: #e6b800;
+}
+
+/* =================== */
+/* MOBILE RESPONSIVENESS */
+/* =================== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header img {
+    margin-top: 20px;
+    max-width: 100px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .cv-container {
+    padding: 15px;
+  }
+
+  #downloadBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .header-info p {
+    font-size: 0.9rem;
+  }
+
+  ul {
+    margin-left: 15px;
+  }
+}
+
   </style>
 </head>
 <body>
